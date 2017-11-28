@@ -16,7 +16,7 @@ const create = (body) => {
     errors.push('Additional Information Required')
     response = {errors}
   } else {
-    const bike = {id: uuid(), brand, type, year, condition}
+    const bike = {id: bikes.length, brand, type, year, condition}
     bikes.push(bike)
     response = bike
   }
