@@ -48,7 +48,7 @@ const deleteOne = (id) => {
   const errors = []
   const toDelete = bikes.find(e => e.id === id)
   if (!toDelete) {
-    errors.push('ID Not Found');
+    errors.push('Additional Information Required');
     response = {errors}
   } else {
     const index = bikes.indexOf(toDelete)
