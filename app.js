@@ -9,6 +9,8 @@ app.disable('x-powered-by')
 if (process.env.NODE_ENV === 'development') app.use(morgan('dev'))
 app.use(bodyParser.json())
 
+app.use(express.static('public'))
+
 const bikeRoutes = require('./src/routes/bikes')
 app.use('/bikes', bikeRoutes)
 
