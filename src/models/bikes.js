@@ -1,5 +1,5 @@
 const uuid = require('uuid/v4')
-const bikes = []
+const bikes = require('../../db/bikes')
 
 const getAll = () => bikes
 
