@@ -123,7 +123,7 @@ describe('Bike Resources', function () {
   })
 
   describe('PUT /:id', function () {
-    it('should update an existing bike when all information is provided', function (done) {
+    it('should update an existing bike given all information', function (done) {
       chai.request(app)
         .get('/bikes')
         .end((err, res) => {
